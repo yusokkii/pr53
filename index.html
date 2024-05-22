@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Математичні функції й константи</h1>
+    <h2>Константи</h2>
+    <ul>
+        <li>Значення константи е = <span id="e"></span></li>
+        <li>Значення константи π = <span id="pi"></span></li>
+        <li>Десятковий логарифм постійної Ейлера (е) = <span id="log10e"></span></li>
+        <li>Двійковий логарифм постійної Ейлера (е) = <span id="log2e"></span></li>
+        <li>Натуральний логарифм числа 10 = <span id="ln10"></span></li>
+        <li>Натуральний логарифм числа 2 = <span id="ln2"></span></li>
+        <li>Корінь квадратний із двох = <span id="sqrt2"></span></li>
+        <li>Корінь квадратний з однієї другої = <span id="sqrt1_2"></span></li>
+    </ul>
+
+    <h2>Функції</h2>
+    <ul>
+        <li>Результат обчислення косинуса нуля радіан: y = <span id="cos0"></span></li>
+        <li>Косинус 180 градусів (π радіан): y = <span id="cos180"></span></li>
+        <li>Результат обчислення арккосинуса нуля: y = <span id="acos0"></span></li>
+        <li>Результат обчислення синуса нуля радіан: y = <span id="sin0"></span></li>
+        <li>Синус 90 градусів (π /2 радіан): y = <span id="sin90"></span></li>
+    </ul>
+
+    <h2>Генератор випадкових чисел</h2>
+    <p>Випадкове число від 0 до 1: <span id="random"></span></p>
+
+    <script>
+        // Константи
+        document.getElementById('e').textContent = Math.E;
+        document.getElementById('pi').textContent = Math.PI;
+        document.getElementById('log10e').textContent = Math.LOG10E;
+        document.getElementById('log2e').textContent = Math.LOG2E;
+        document.getElementById('ln10').textContent = Math.LN10;
+        document.getElementById('ln2').textContent = Math.LN2;
+        document.getElementById('sqrt2').textContent = Math.SQRT2;
+        document.getElementById('sqrt1_2').textContent = Math.SQRT1_2;
+
+        // Функції
+        document.getElementById('cos0').textContent = Math.cos(0);
+        document.getElementById('cos180').textContent = Math.cos(Math.PI);
+        document.getElementById('acos0').textContent = Math.acos(0);
+        document.getElementById('sin0').textContent = Math.sin(0);
+        document.getElementById('sin90').textContent = Math.sin(Math.PI / 2);
+
+        // Генератор випадкових чисел
+        document.getElementById('random').textContent = Math.random();
+    </script>
+</body>
+</html>
